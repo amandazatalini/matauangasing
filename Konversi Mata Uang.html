@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Konversi Mata Uang</title>
+
+<!-- META TAG -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div id="menu">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Konversi Mata Uang Asing ke Rupiah</h1>
+    <p class="lead">Sebuah situs yang menyediakan untuk melakukan konversi mata uang Asing ke Rupiah.</p>
+  </div>
+</div>
+
+<div id="konversi">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+
+<form name="form" onchange="konversiuang()">
+<table style="width: 100%;">
+<tr>
+<td>Mata Uang Asing</td>
+<td>
+<select name="uangasing">
+<option value="pilih">-- Pilih Mata Uang Asing --</option>
+<option value="USD">United State Dollar</option>
+<option value="SGD">Singapore Dollar</option>
+<option value="AUD">Australian Dollar</option>
+<option value="EURO">Euro</option>
+<option value="CNY">Yuan</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label for="nilai">Nilai</label></td>
+<td><input type="text" name="nilai"></td>
+
+</tr>
+
+<tr>
+<td><label for="kurs">Hasil Kurs</label></td>
+<td><input type="text" name="kurs"></td>
+</tr>
+
+<tr>
+
+<td><button type="reset" class="btn btn-danger">RESET</button></td>
+</tr>
+
+</table>
+</form>
+</div>
+
+<div class="col-md-6">
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Nominal</th>
+      <th scope="col">Mata Uang Asing</th>
+      <th scope="col">Rupiah</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>United State Dollar (USD)</td>
+      <td>13.500</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>Singapore Dollar (SGD)</td>
+      <td>9.900</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>Australia Dollar (AUD)</td>
+      <td>10.400</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>EURO (EURO)</td>
+      <td>15.900</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>Chinese Yuan (CNY)</td>
+      <td>2.000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<!-- SCRIPT -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js.js"></script>
+
+</body>
+</html>
